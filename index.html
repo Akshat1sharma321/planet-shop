@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: aliceblue;
+
+        }
+        body{
+            font-family: "Playwrite US Trad", cursive;
+            background-color: slategrey;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        ul li a{
+            margin: 0 5px;
+            border: 2px solid white;
+            padding: 0 10px;
+            border-radius: 50px;
+
+        }
+        .Logo{
+            border: 2px solid white;
+            padding: 0px 5px ;
+            margin-right: 100px;
+            padding-left: 100px;
+            justify-content: flex-start;
+        }
+        .signup{
+            background-color: white;
+            color: black;
+        }
+        .signup:hover{
+            background-color: black;
+            color: white;
+
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            flex-wrap: wrap;
+
+        }
+        main h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 30px 0px;
+        }
+        main p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+        }
+        .contentleft{
+            flex: 1;
+        }
+        .contentmid{
+            flex: 2;
+        }
+        .contentright{
+            flex: 1;
+        }
+        .mercury{
+            max-width: 500px;
+            height: auto;
+
+        }
+        .btn{
+            padding: 15px 30px;
+            background: white;
+            outline: none;
+            border: none;
+            color: black;
+            border-radius: 50px;
+            font-weight: 700px;
+        }
+        .btn:hover{
+            background-color: grey;
+            color: white;
+        }
+        .log{
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="Minute break.png" class="log">
+
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li><a href="#">offer</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li> <a href="#"> Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contentleft">
+            <h2>
+                Mercury
+            </h2>
+        </div>
+        <div class="contentmid">
+            <p>
+                Mercury is the inner most planet of solar system
+                nearest to the sun. Buy this planet to get the 
+                most solar energy at your home.Hope you enjoy this 
+                journey at the sun nearest to the venus.
+            </p>
+            <button class="btn">Buy Now </button>
+        </div>
+        <div class="contentright">
+            <img src="mercury.jpg" class="mercury" alt="Mercury">
+        </div>
+    </main>
+</body>
+</html>
